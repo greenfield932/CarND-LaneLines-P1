@@ -1,9 +1,5 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
 ---
 
 **Finding Lane Lines on the Road**
@@ -38,19 +34,31 @@ My pipeline consisted of 7 steps.
 
 Step1. Make a color split with treshold for yellow (in HSV space) and white (in RGB space) colors
 
+![alt text][image1]
+
 Step2. Apply blur to result image to make mask more smooth, this helps to remove some noise and prepare image for canny algorithm
+
+![alt text][image2]
 
 Step3. Convert image to grayscale
 
+![alt text][image3]
+
 Step4. Apply Canny algorithm
+
+![alt text][image4]
 
 Step5. Prepare region of interest
 
+![alt text][image5]
+
 Step6. Apply Hough analysis to find lines, filter out bad lines and average lines
+
+![alt text][image6]
 
 Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
 
-
+![alt text][image7]
 ### 2. Identify potential shortcomings with your current pipeline
 
 

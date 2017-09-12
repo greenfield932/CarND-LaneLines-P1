@@ -21,13 +21,17 @@ The goals / steps of this project are the following:
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. Pipeline description
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 7 steps.
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Step1. Make a color split with treshold for yellow (in HSV space) and white (in RGB space) colors
+Step2. Apply blur to result image to make mask more smooth, this helps to remove some noise and prepare image for canny algorithm
+Step3. Convert image to grayscale
+Step4. Apply Canny algorithm
+Step5. Prepare region of interest
+Step6. Apply Hough analysis to find lines
+Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
 
 ![alt text][image1]
 

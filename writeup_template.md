@@ -14,15 +14,15 @@ The goals / steps of this project are the following:
 
 
 [//]: # (Image References)
-
+[sourceimg]: ./writeup_data/source.jpg
 [image1]: ./writeup_data/step1.png
-#[image2]: ./examples/grayscale.jpg "Grayscale"
-#[image3]: ./examples/grayscale.jpg "Grayscale"
-#[image4]: ./examples/grayscale.jpg "Grayscale"
-#[image5]: ./examples/grayscale.jpg "Grayscale"
-#[image6.1]: ./examples/grayscale.jpg "Grayscale"
-#[image6.2]: ./examples/grayscale.jpg "Grayscale"
-#[image7]: ./examples/grayscale.jpg "Grayscale"
+[image2]: ./writeup_data/step2.png
+[image3]: ./writeup_data/step3.png
+[image4]: ./writeup_data/step4.png
+[image5]: ./writeup_data/step5.png
+[image6.1]: ./writeup_data/step6.1.png
+[image6.2]: ./writeup_data/step6.2.png
+[image7]: ./writeup_data/step7.png
 
 ---
 
@@ -30,9 +30,13 @@ The goals / steps of this project are the following:
 
 ### 1. Pipeline description
 
-My pipeline consisted of 7 steps.
+Initial image
 
+
+My pipeline consisted of 7 steps.
 Step1. Make a color split with treshold for yellow (in HSV space) and white (in RGB space) colors
+![alt text][sourceimg]
+
 Step2. Apply blur to result image to make mask more smooth, this helps to remove some noise and prepare image for canny algorithm
 Step3. Convert image to grayscale
 Step4. Apply Canny algorithm
@@ -40,7 +44,7 @@ Step5. Prepare region of interest
 Step6. Apply Hough analysis to find lines
 Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
 
-![alt text][image1]
+
 
 
 ### 2. Identify potential shortcomings with your current pipeline

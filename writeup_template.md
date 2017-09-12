@@ -54,7 +54,7 @@ Step5. Prepare region of interest
 
 Step6. Apply Hough analysis to find lines, filter out bad lines and average lines
 
-![alt text][image6]
+![alt text][image6.1]![alt text][image6.2]
 
 Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
 

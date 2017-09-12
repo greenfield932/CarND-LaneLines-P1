@@ -65,14 +65,20 @@ Step7. Draw transparent lines by combining initial image and resulted lines imag
 ![alt text][image7]
 ### 2. Identify potential shortcomings with your current pipeline
 
+One shortcoming is inability to work with turning lane lines.
 
-One potential shortcoming would be what would happen when ... 
+Another shortcoming is manual setup of region of interest. Common region that can work with multiple videos with different camera setup angle cannot be set. If region is too big then
+analysis can produce false positives because of white cars that appear at right/left of the line.
 
-Another shortcoming could be ...
+Another shortcoming of real world application would be cars in front of camera when they became too close.
 
+Another shortcoming I believe would be inability to work with different light conditions close to night and after rain when road reflects a sunlight.
+
+Another shortcoming will be detecting of complex lane lines like intersections and so on.
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to work with curve fitting when analysing turning lane lines.
 
-Another potential improvement could be to ...
+Possible improvement for real world application can be filtering objects like cars by deep learning approach to prevent false positives of lane lines detection.
+

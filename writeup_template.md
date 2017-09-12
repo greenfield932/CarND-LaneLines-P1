@@ -56,7 +56,7 @@ Step6. Apply Hough analysis to find lines
 
 ![alt text][image6.1]
 
-Filter out bad lines (lines that close to horizontal), split all found lines in 2 groups by their slope (left and right lines with positive and negative slope), make average lines for left and right group
+Filter out bad lines (lines which have slope close to horizontal), split all found lines in 2 groups by their slope (left and right lines with positive and negative slope), make average lines for left and right group
 
 ![alt text][image6.2]
 

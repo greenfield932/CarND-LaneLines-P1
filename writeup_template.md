@@ -32,19 +32,23 @@ The goals / steps of this project are the following:
 
 Initial image
 
-
-My pipeline consisted of 7 steps.
-Step1. Make a color split with treshold for yellow (in HSV space) and white (in RGB space) colors
 ![alt text][sourceimg]
 
+My pipeline consisted of 7 steps.
+
+Step1. Make a color split with treshold for yellow (in HSV space) and white (in RGB space) colors
+
 Step2. Apply blur to result image to make mask more smooth, this helps to remove some noise and prepare image for canny algorithm
+
 Step3. Convert image to grayscale
+
 Step4. Apply Canny algorithm
+
 Step5. Prepare region of interest
-Step6. Apply Hough analysis to find lines
+
+Step6. Apply Hough analysis to find lines, filter out bad lines and average lines
+
 Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
-
-
 
 
 ### 2. Identify potential shortcomings with your current pipeline

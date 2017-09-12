@@ -63,6 +63,7 @@ Filter out bad lines (lines which have slope close to horizontal), split all fou
 Step7. Draw transparent lines by combining initial image and resulted lines image with blending technique
 
 ![alt text][image7]
+
 ### 2. Identify potential shortcomings with your current pipeline
 
 One shortcoming is inability to work with turning lane lines.

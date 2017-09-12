@@ -83,3 +83,12 @@ A possible improvement would be to work with curve fitting when analysing turnin
 
 Possible improvement for real world application can be filtering objects like cars by deep learning approach to prevent false positives of lane lines detection.
 
+### 4. References to source code
+
+Yellow color ranges for detection
+https://stackoverflow.com/questions/9179189/detect-yellow-color-in-opencv
+
+
+
+
+
